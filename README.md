@@ -1,0 +1,2 @@
+# zemacofig
+my emacs config
