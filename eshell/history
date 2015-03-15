@@ -1,0 +1,128 @@
+python epub.py
+fbreader my_ebook.epub
+cd projects/
+ls
+cd simpleepub/
+ls
+ls
+ls
+ls
+mv sanmao/epubsection.py .
+ls
+python epubsection.py
+ls
+python epubsection.py
+python epubsection.py
+python epubsection.py
+ls
+ls -a
+python epubsection.py
+python epubsection.py
+python epubsection.py
+python epub.py
+python epub.py
+fbreader my_ebook.epub
+ls
+cd config/
+ls
+grep face *
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd emacs/
+ls
+touch Emacs-My-Life-With-Emacs.tex
+cat ../doc/blogdoc/
+ls ..
+cd ..
+cd ..
+ls
+cd latextemplate/
+ls
+cd blogdoc/
+ls
+cd ..
+ls
+cd myreport/
+ls
+cd report4/
+ls
+zathura 周永强-13063207-千兆网卡驱动程序分析.pdf
+ls
+cp labbook.cls Makefile lab_book.tex zhfontcfg.sty ../../../notes/emacs/
+cd ../../../notes/emacs/
+ls
+ls
+make
+ls
+zathura lab_book.pyg.lst
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+make
+make
+zathura lab_book.pdf 
+make
+zathura lab_book.pdf 
+ls
+mv Emacs-My-Life-With-Emacs.tex My-Life-With-Emacs.tex
+ls
+ls %
+echo $1
+echo $0
+echo $1
+ls
+cat lab_book.tex > My-Life-With-Emacs.tex
+ls
+make clean
+ls
+rm lab_book.pdf
+ls
+ls
+ls
+ls
+make
+ls
+make
+ls
+zathura My-Life-With-Emacs.pdf 
+rm lab_book.tex
+ls
+make
+ls
+make
+ls
+make
+zathura My-Life-With-Emacs.pdf 
+make
+zathura My-Life-With-Emacs.pdf 

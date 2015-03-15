@@ -1,0 +1,70 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("e1000_alloc_rx_buffers"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "(struct e1000_ad")
+ (rear-context-string . "alloc_rx_buffers")
+ (position . 145364))
+("e1000_clean"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . " structure\n **/\n")
+ (position . 108216))
+("e1000_setup_all_rx_resources"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "(struct e1000_ad")
+ (rear-context-string . "tup_rx_resources")
+ (position . 53991))
+("e1000_clean_rx_irq"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static bool e100")
+ (rear-context-string . " call to do\n */\n")
+ (position . 137417))
+("e1000_configure_rx"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static void e100")
+ (rear-context-string . "r a reset.\n **/\n")
+ (position . 58735))
+("e1000_configure"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static void e100")
+ (rear-context-string . " structure\n **/\n")
+ (position . 13611))
+("e1000_intr"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static irqreturn")
+ (rear-context-string . " structure\n **/\n")
+ (position . 120863))
+("e1000_request_irq"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . "_exit_module);\n\n")
+ (position . 10832))
+("e1000_open"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "000_open(struct ")
+ (rear-context-string . "*/\nstatic int e1")
+ (position . 43703))
+("e1000_probe"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . "set occur.\n **/\n")
+ (position . 30754))
+("e1000_main.c"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . "set occur.\n **/\n")
+ (position . 28480))
+("e1000<2>"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . "set occur.\n **/\n")
+ (position . 28480))
+("e1000_main.c<2>"
+ (filename . "~/projects/kernelanalysis/e1000/e1000_main.c")
+ (front-context-string . "static int e1000")
+ (rear-context-string . "set occur.\n **/\n")
+ (position . 28480))
+)

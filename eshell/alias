@@ -1,0 +1,3 @@
+alias e1000_analysis.log  $*
+alias LS $*
+alias 5 $*
