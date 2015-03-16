@@ -28,18 +28,18 @@
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/zenburn")
-;(load-theme 'zenburn t)
-;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/solarized")
-;(require 'solarized)
-;(require 'solarized-themes)
-;(load-theme 'solarized-dark)
+					;(load-theme 'zenburn t)
+					;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/solarized")
+					;(require 'solarized)
+					;(require 'solarized-themes)
+					;(load-theme 'solarized-dark)
 
-;(load-theme 'dichromacy)
-;(load-theme 'adwaita)
+					;(load-theme 'dichromacy)
+					;(load-theme 'adwaita)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-themes/themes")
-;(load-theme 'spolsky t)
-;(load-theme 'hickey t)
- 
+					;(load-theme 'spolsky t)
+					;(load-theme 'hickey t)
+
 ;; Overwrite theme default setting
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -48,20 +48,19 @@
  ;; If there is more than one, they won't work right.
 
  ;; Function name face setting
+ '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))))
  '(font-lock-function-name-face ((t (:foreground "#93E0E3" :height 1.3))))
  
  ;; Info-mode face setting
  '(font-lock-function-name-face ((t (:foreground "#93E0E3" :height 1.3))))
- ;'(info-xref ((t (:inherit link :foreground "#F92672" :underline t :family "DejaVu Sans Mono"))))
+					;'(info-xref ((t (:inherit link :foreground "#F92672" :underline t :family "DejaVu Sans Mono"))))
  '(mode-line ((t (:foreground "#00ffff" :background "#ee00ee" :box nil))))
- '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))
- ;; Other custom setting...
- )
+ '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))) ;; Other custom setting...
 
 ;; Use variable with font faces in current  buffer
 (defun my-buffer-face-mode-varible ()
   (interactive)
-  ;(setq buffer-face-mode-face '(:family "DejaVu Serif"))
+					;(setq buffer-face-mode-face '(:family "DejaVu Serif"))
   (buffer-face-mode))
 ;; Set default font faces for Info-mode
 (add-hook 'Info-mode-hook 'my-buffer-face-mode-varible)
@@ -70,12 +69,12 @@
 (defun toggle-full-screen (&optional f)
   "Maxsize the frame when launch emacs."
   (interactive)
-	(x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-							 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-	(x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-							 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
+  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+			 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
+  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+			 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0)))
 (when (eq window-system 'x)
-	(toggle-full-screen))
+  (toggle-full-screen))
 
 ;; 全屏设置
 (defun switch-fullscreen nil
@@ -90,24 +89,20 @@
 (define-key global-map [f11] 'switch-fullscreen)
 
 ;; 设置默认字体，使得字体更好看
-;(when window-system
-;  (let ((myfont "DejaVu Sans Mono-12"))
-;	(set-frame-font myfont)
-;	(add-to-list 'default-frame-alist (cons 'font myfont))))
+					;(when window-system
+					;  (let ((myfont "DejaVu Sans Mono-12"))
+					;	(set-frame-font myfont)
+					;	(add-to-list 'default-frame-alist (cons 'font myfont))))
 
 ;; 中文字体
 ;;(set-fontset-font "fontset-default" 'han '("Microsoft YaHei" . "unicode-bmp"))
-;(set-fontset-font "fontset-default" 'han '("WenQuanYi Micro Hei"))
+					;(set-fontset-font "fontset-default" 'han '("WenQuanYi Micro Hei"))
 ;; 窗口显示设置，0表示隐藏，t表示显示
-;
-;(tool-bar-mode 0)	;工具栏		
-;(scroll-bar-mode t)	;滚动条
-;(menu-bar-mode t)	;菜单
-;
+
 (progn
   ;; Turn off mouse interface early in startup to avoid momentary display
   (dolist (mode '(
- ;                 menu-bar-mode 
+					;menu-bar-mode 
                   tool-bar-mode 
                   scroll-bar-mode
                   auto-fill-mode ;; 关闭自动换行
@@ -115,77 +110,37 @@
     (when (fboundp mode) (funcall mode -1))))
 
 ;; TAB的宽度
-;(setq default-tab-width 8)
-;TAB的宽度在这里设置没有用，因为emacs的tab默认绑定不是<tab>字符，而是一个
-;函数，而插入<tab>字符的命令是C-q <tab>，一般不鼓励这样做，具体的在具体的
-;编程环境中进行设置
-
-;; ibus setting
-;(add-to-list 'load-path "~/.emacs.d/vendor/ibus-el")
-;(require 'ibus)
-;(add-hook 'after-init-hook 'ibus-mode-on)
-;(setq ibus-python-shell-command-name "python2.7")
+					;(setq default-tab-width 8)
+					;TAB的宽度在这里设置没有用，因为emacs的tab默认绑定不是<tab>字符，而是一个
+					;函数，而插入<tab>字符的命令是C-q <tab>，一般不鼓励这样做，具体的在具体的
+					;编程环境中进行设置
 
 ;; 显示行号
 (require 'linum)
 (global-linum-mode t)
 (setq linum-format "  %d ")
 
-;;;;;;;;;;;;;;;;;;;; Tabbar 设置 ;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'load-path "~/.emacs.d/vendor/tabbar/tabbar")
-(require 'tabbar)
-(tabbar-mode)
-(global-set-key [(meta j)] 'tabbar-backward)  
-(global-set-key [(meta k)] 'tabbar-forward)
-;; 设置tabbar外观 
-;; 设置默认主题: 字体, 背景和前景颜色，大小 
-(set-face-attribute 'tabbar-default nil
-					:family "Vera Sans YuanTi Mono"
-					:background "gray90"
-					:foreground "gray20"
-					:height 1.0 
-					) 
-;; 设置左边按钮外观：外框框边大小和颜色 
-(set-face-attribute 'tabbar-button nil
-					:inherit 'tabbar-default
-					:box '(:line-width 1 :color "gray30") 
-					) 
-;; 设置当前tab外观：颜色，字体，外框大小和颜色 
-(set-face-attribute 'tabbar-selected nil
-					:inherit 'tabbar-default
-					:foreground "DarkGreen"
-					:background "LightGoldenrod"
-					:box '(:line-width 2 :color "DarkGoldenrod") 
-					;; :overline "black" 
-					;; :underline "black" 
-					:weight 'bold
-					) 
-;; 设置非当前tab外观：外框大小和颜色 
-(set-face-attribute 'tabbar-unselected nil
-					:inherit 'tabbar-default
-					:foreground "LightGoldenrod"
-					:background "DarkGreen"
-					:box '(:line-width 2 :color "gray70") 
-					)
+;; 
+;; (require 'tabbar-config)
 
 ;;;;;;;;;;;;;;;;;;;; yasnippet设置 ;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path	"~/.emacs.d/vendor/yasnippet")
 (require 'yasnippet)
 (setq yas-snippet-dirs
-	  '(;"~/.emacs.d/snippets"                 ;; personal snippets
-		;"/path/to/some/collection/"           ;; foo-mode and bar-mode snippet collection
-		;"/path/to/yasnippet/yasmate/snippets" ;; the yasmate collection
-		"~/.emacs.d/vendor/yasnippet/snippets"         ;; the default collection
-		))
+      '(;"~/.emacs.d/snippets"                 ;; personal snippets
+					;"/path/to/some/collection/"           ;; foo-mode and bar-mode snippet collection
+					;"/path/to/yasnippet/yasmate/snippets" ;; the yasmate collection
+	"~/.emacs.d/vendor/yasnippet/snippets"         ;; the default collection
+	))
 (yas-global-mode 1)
 
 
-;(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet-bundle")
-;(require 'yasnippet-bundle)
-;(setq yas/root-directory "~/.emacs.d/plugins")
+					;(add-to-list 'load-path "~/.emacs.d/vendor/yasnippet-bundle")
+					;(require 'yasnippet-bundle)
+					;(setq yas/root-directory "~/.emacs.d/plugins")
 ;;--加入下面一段话会使加载时候很慢,可以Emacs启动后手动加载  M -x yas/load-director
 ;;自己新建模板的话用yas/new-snippet
-;(yas/load-directory yas/root-directory)
+					;(yas/load-directory yas/root-directory)
 
 
 ;;;;;;;;;;;;;;;;;;;; auto-complete 设置 ;;;;;;;;;;;;;;;;;;;;
@@ -219,11 +174,11 @@
         ("^html?$" "." "iceweasel %o"))))
 ;; Use zathura as the pdf viewer.
 (setq TeX-view-program-selection
-	   '((output-pdf "PDF Viewer")))
+      '((output-pdf "PDF Viewer")))
 (setq TeX-view-program-list
-	   '(("PDF Viewer" "zathura %o")))
+      '(("PDF Viewer" "zathura %o")))
 
-;To highlight (or font-lock) the “\section{title}” lines:
+					;To highlight (or font-lock) the “\section{title}” lines:
 
 ;; (font-lock-add-keywords
 ;;    'latex-mode
@@ -241,7 +196,7 @@
 (add-hook 'after-init-hook 'session-initialize)
 
 ;; restore session
-;(desktop-save-mode 1)
+					;(desktop-save-mode 1)
 
 ;; ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
@@ -274,30 +229,9 @@
 (global-set-key (kbd "C-c l") 'hide-lines)
 (global-set-key (kbd "C-c L") 'show-all-invisible)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;; dictionary ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (add-to-list 'load-path "~/.emacs.d/vendor/dictionary")
-;; (require 'dictionary)
-
-;; (global-set-key [mouse-3] 'dictionary-mouse-popup-matching-words)
-;; (global-set-key [(control c)(d)] 'dictionary-lookup-definition)
-;; (global-set-key [(control c)(s)] 'dictionary-search)
-;; (global-set-key [(control c)(m)] 'dictionary-match-words)
-
-;; ;; choose a dictionary server
-;; (setq dictionary-server "localhost")
-
-;; ;; for dictionary tooltip mode
-;; ;; choose the dictionary: "wn" for WordNet
-;; ;; "web1913" for Webster's Revised Unabridged Dictionary(1913)
-;; ;; so on
-;; (setq dictionary-tooltip-dictionary "wn")
-;; (global-dictionary-tooltip-mode t)
-;; ;(dictionary-tooltip-mode t)
-
-
 ;; sr-speedbar
 (add-to-list 'load-path "~/.emacs.d/vendor/sr-speedbar")
-; (require 'sr-speedbar)
+					; (require 'sr-speedbar)
 
 ;; smex
 (add-to-list 'load-path "~/.emacs.d/vendor/smex")
@@ -333,8 +267,8 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/paredit")
 (require 'paredit)
 (add-hook 'emacs-lisp-mode-hook 'paredit-mode)
-;(add-hook 'prog-mode-hook 'paredit-mode)
-;(paredit-mode t)
+					;(add-hook 'prog-mode-hook 'paredit-mode)
+					;(paredit-mode t)
 
 ;; find file in project
 (add-to-list 'load-path "~/.emacs.d/vendor/find-file-in-project")
@@ -343,7 +277,7 @@
 
 ;; magit
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
-;(require 'magit)
+					;(require 'magit)
 
 ;; copy
 (require 'copy-enhanced)
@@ -363,7 +297,15 @@
  '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
 
 (add-to-list 'load-path "/home/zyqhi/.emacs.d/vendor/yascroll-el")
-;(require 'yascroll)
-;(global-yascroll-bar-mode 1)
+					;(require 'yascroll)
+					;(global-yascroll-bar-mode 1)
+
+;; markdown-mode
+(add-to-list 'load-path "~/.emacs.d/vendor/markdown-mode")
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (provide 'basic-config)
