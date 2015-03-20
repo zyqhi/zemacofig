@@ -308,4 +308,9 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;;
+(add-to-list 'load-path "~/.emacs.d/vendor/pretty-mode")
+(require 'pretty-mode)
+(global-pretty-mode 1)
+
 (provide 'basic-config)

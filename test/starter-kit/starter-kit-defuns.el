@@ -65,7 +65,8 @@
    nil `(("(?\\(lambda\\>\\)"
           (0 (progn (compose-region (match-beginning 1) (match-end 1)
                                     ,(make-char 'greek-iso8859-7 107))
-                    nil))))))
+		    nil))))))
+(esk-pretty-lambdas)
 
 (defun esk-add-watchwords ()
   (font-lock-add-keywords

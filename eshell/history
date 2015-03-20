@@ -1,59 +1,3 @@
-python epub.py
-fbreader my_ebook.epub
-cd projects/
-ls
-cd simpleepub/
-ls
-ls
-ls
-ls
-mv sanmao/epubsection.py .
-ls
-python epubsection.py
-ls
-python epubsection.py
-python epubsection.py
-python epubsection.py
-ls
-ls -a
-python epubsection.py
-python epubsection.py
-python epubsection.py
-python epub.py
-python epub.py
-fbreader my_ebook.epub
-ls
-cd config/
-ls
-grep face *
-ls
-cd ..
-ls
-ls
-cd ..
-ls
-cd ..
-ls
-cd emacs/
-ls
-touch Emacs-My-Life-With-Emacs.tex
-cat ../doc/blogdoc/
-ls ..
-cd ..
-cd ..
-ls
-cd latextemplate/
-ls
-cd blogdoc/
-ls
-cd ..
-ls
-cd myreport/
-ls
-cd report4/
-ls
-zathura 周永强-13063207-千兆网卡驱动程序分析.pdf
-ls
 cp labbook.cls Makefile lab_book.tex zhfontcfg.sty ../../../notes/emacs/
 cd ../../../notes/emacs/
 ls
@@ -126,3 +70,59 @@ make
 zathura My-Life-With-Emacs.pdf 
 make
 zathura My-Life-With-Emacs.pdf 
+ls
+open -a 
+open -a Mou index.text 
+open -a Marxico index.text 
+open -a Marxico index.text 
+open -a Mou index.text 
+open -a Mou index.text 
+ls
+emacs index.text 
+open -a Mou index.text 
+open -a Mou index.text 
+ls
+ls
+mmd index.text -o index.html 
+ls
+cd project/
+ls
+cd zemacofig/
+ls
+cd teq
+cd tesq
+cd test
+ls
+cd starter-kit/
+ls
+grep lambda *
+ls
+touch elisp_code_note.md
+ls
+mv elisp.md elisp.el
+ls
+cd ..
+ls
+cd ..
+ls
+mv Downloads/pretty-mode.el .emacs.d/vendor/
+cd .emacs.d/vendor/
+ls
+mkdir pretty-mode
+mv pretty-mode.el pretty-mode/
+ls
+cd pretty-mode/
+ls
+pwd
+ls
+ls Applications/
+ls /
+ls /Applications/
+ls
+cd ..
+ls
+cd ..
+ls
+mkdir doc
+ls
+zsh
