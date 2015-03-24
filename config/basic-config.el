@@ -14,8 +14,8 @@
 ;; 不要总是没完没了的问yes or no, 为什么不能用 y/n 
 (fset 'yes-or-no-p 'y-or-n-p) 
 
-;; 显示时间设置
-;; 启用时间显示设置，在minibuffer上面的那个杠上
+;; Time settings
+;; Display time in mode line
 (display-time-mode 1)
 ;; 时间使用24小时制
 (setq display-time-24hr-format t)
@@ -25,6 +25,8 @@
 (setq display-time-use-mail-icon t)
 ;; 时间的变化频率
 (setq display-time-interval 10)
+
+;;------------
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/zenburn")
@@ -37,33 +39,21 @@
 					;(load-theme 'dichromacy)
 					;(load-theme 'adwaita)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-themes/themes")
+					;(load-theme 'graham t)
+(load-theme 'granger t)
 					;(load-theme 'spolsky t)
 					;(load-theme 'hickey t)
+;; -------------
 
-;; Overwrite theme default setting
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
 
- ;; Function name face setting
- '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 120 :width normal :foundry "nil" :family "Monaco"))))
- '(font-lock-function-name-face ((t (:foreground "#93E0E3" :height 1.3))))
- 
- ;; Info-mode face setting
- '(font-lock-function-name-face ((t (:foreground "#93E0E3" :height 1.3))))
-					;'(info-xref ((t (:inherit link :foreground "#F92672" :underline t :family "DejaVu Sans Mono"))))
- '(mode-line ((t (:foreground "#00ffff" :background "#ee00ee" :box nil))))
- '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))) ;; Other custom setting...
-
-;; Use variable with font faces in current  buffer
 (defun my-buffer-face-mode-varible ()
   (interactive)
 					;(setq buffer-face-mode-face '(:family "DejaVu Serif"))
   (buffer-face-mode))
 ;; Set default font faces for Info-mode
 (add-hook 'Info-mode-hook 'my-buffer-face-mode-varible)
+
+
 
 ;; 最大化窗口
 (defun toggle-full-screen (&optional f)
@@ -127,9 +117,7 @@
 (add-to-list 'load-path	"~/.emacs.d/vendor/yasnippet")
 (require 'yasnippet)
 (setq yas-snippet-dirs
-      '(;"~/.emacs.d/snippets"                 ;; personal snippets
-					;"/path/to/some/collection/"           ;; foo-mode and bar-mode snippet collection
-					;"/path/to/yasnippet/yasmate/snippets" ;; the yasmate collection
+      '(
 	"~/.emacs.d/vendor/yasnippet/snippets"         ;; the default collection
 	))
 (yas-global-mode 1)
@@ -231,7 +219,7 @@
 
 ;; sr-speedbar
 (add-to-list 'load-path "~/.emacs.d/vendor/sr-speedbar")
-					; (require 'sr-speedbar)
+(require 'sr-speedbar)
 
 ;; smex
 (add-to-list 'load-path "~/.emacs.d/vendor/smex")
@@ -292,9 +280,9 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
 (require 'powerline)
 
-(custom-set-faces
- '(mode-line ((t (:foreground "#00ffff" :background "#ee00ee" :box nil))))
- '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
+;; (custom-set-faces
+;;  '(mode-line ((t (:foreground "#00ffff" :background "#ee00ee" :box nil))))
+;;  '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
 
 (add-to-list 'load-path "/home/zyqhi/.emacs.d/vendor/yascroll-el")
 					;(require 'yascroll)

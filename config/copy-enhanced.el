@@ -1,3 +1,50 @@
+;;;;;;;;;;;;;;;;;;;;; 基本配置 ;;;;;;;;;;;;;;;;;;;;
+
+;; 括号匹配时显示另外一边的括号，而不是烦人的跳到另一个括号
+(show-paren-mode t)
+(setq show-paren-style 'parentheses)
+;; 关闭开机画面
+(setq inhibit-startup-message t)
+;; 不备份文件，不推荐
+(setq make-backup-files nil)
+;; 设置光标为竖线
+(setq-default cursor-type 'bar)
+;; 标记开始
+(global-set-key (kbd "C-j") 'set-mark-command);;
+;; 不要总是没完没了的问yes or no, 为什么不能用 y/n 
+(fset 'yes-or-no-p 'y-or-n-p) 
+
+;; Time settings
+;; Display time in mode line
+(display-time-mode 1)
+;; 时间使用24小时制
+(setq display-time-24hr-format t)
+;; 时间显示包括日期和具体时间
+(setq display-time-day-and-date t)
+;; 时间栏旁边启用邮件设置
+(setq display-time-use-mail-icon t)
+;; 时间的变化频率
+(setq display-time-interval 10)
+
+;;------------
+
+;; theme
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/zenburn")
+					;(load-theme 'zenburn t)
+					;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/solarized")
+					;(require 'solarized)
+					;(require 'solarized-themes)
+					;(load-theme 'solarized-dark)
+
+					;(load-theme 'dichromacy)
+					;(load-theme 'adwaita)
+; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-themes/themes")
+;(load-theme 'graham t)
+					;(load-theme 'spolsky t)
+					;(load-theme 'hickey t)
+;; -------------
+
+
 ;; This buffer is for notes you don't want to save, and for Lisp evaluation.
 ;; If you want to create a file, visit that file with C-x C-f,
 ;; then enter the text in that file's own buffer.
