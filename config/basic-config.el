@@ -70,8 +70,8 @@
 (defun switch-fullscreen nil
   (interactive)
   (let* ((modes '(nil fullboth))
-         (cm (cdr (assoc 'fullscreen (frame-parameters) ) ) )
-         (next (cadr (member cm modes))))
+	 (cm (cdr (assoc 'fullscreen (frame-parameters) ) ) )
+	 (next (cadr (member cm modes))))
     (modify-frame-parameters
      (selected-frame)
      (list (cons 'fullscreen next)))))
@@ -93,10 +93,10 @@
   ;; Turn off mouse interface early in startup to avoid momentary display
   (dolist (mode '(
 					;menu-bar-mode 
-                  tool-bar-mode 
-                  scroll-bar-mode
-                  auto-fill-mode ;; 关闭自动换行
-                  ))
+		  tool-bar-mode 
+		  scroll-bar-mode
+		  auto-fill-mode ;; 关闭自动换行
+		  ))
     (when (fboundp mode) (funcall mode -1))))
 
 ;; TAB的宽度
@@ -151,15 +151,15 @@
 
 ;; configuration for latex
 (add-hook 'LaTeX-mode-hook (lambda()
-                             (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
-                             (setq TeX-command-default "XeLaTeX")
-                             (setq TeX-save-query  nil )
-                             (setq TeX-show-compilation t)
-                             ))
+			     (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
+			     (setq TeX-command-default "XeLaTeX")
+			     (setq TeX-save-query  nil )
+			     (setq TeX-show-compilation t)
+			     ))
 (setq TeX-output-view-style
       (quote
        (("^pdf$" "." "zathura  %o")
-        ("^html?$" "." "iceweasel %o"))))
+	("^html?$" "." "iceweasel %o"))))
 ;; Use zathura as the pdf viewer.
 (setq TeX-view-program-selection
       '((output-pdf "PDF Viewer")))
@@ -264,8 +264,12 @@
 (global-set-key (kbd "C-x f") 'find-file-in-project)
 
 ;; magit
+(add-to-list 'load-path "~/.emacs.d/vendor/git-modes")
 (add-to-list 'load-path "~/.emacs.d/vendor/magit")
-					;(require 'magit)
+(eval-after-load 'info
+  '(progn (info-initialize)
+	  (add-to-list 'Info-directory-list "/path/to/magit/")))
+(require 'magit)
 
 ;; copy
 (require 'copy-enhanced)
@@ -291,7 +295,7 @@
 ;; markdown-mode
 (add-to-list 'load-path "~/.emacs.d/vendor/markdown-mode")
 (autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
+  "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
