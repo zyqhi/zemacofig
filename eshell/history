@@ -1,11 +1,3 @@
-cd .emacs.d/vendor/
-ls
-mkdir pretty-mode
-mv pretty-mode.el pretty-mode/
-ls
-cd pretty-mode/
-ls
-pwd
 ls
 ls Applications/
 ls /
@@ -126,3 +118,11 @@ jekyll s
 man ascii
 ls
 echo "" > sr-speedbar.el 
+ls
+cd project/
+ls
+cd test/
+ls
+mkdir tex
+cd tex/
+touch test.tex
