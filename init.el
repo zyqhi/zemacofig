@@ -17,18 +17,6 @@
 (require 'skills)
 ;---------------------------------------------------
 
-(global-set-key [(f8)] 'loop-alpha)  ;;注意这行中的F8 , 可以改成你想要的按键
-    
-(setq alpha-list '((50 55) (100 100)))    
-    
-(defun loop-alpha ()    
-  (interactive)    
-  (let ((h (car alpha-list)))                    
-    ((lambda (a ab)    
-       (set-frame-parameter (selected-frame) 'alpha (list a ab))    
-       (add-to-list 'default-frame-alist (cons 'alpha (list a ab)))    
-       ) (car h) (car (cdr h)))    
-    (setq alpha-list (cdr (append alpha-list (list h))))))  
 
 ;; man page 
 (global-set-key [(f1)] (lambda ()  (interactive)  (manual-entry  (current-word))))
@@ -53,7 +41,7 @@
   (require 'disaster)
   (define-key c-mode-base-map (kbd "C-c C-d") 'disaster))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;end init.el;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;; key bindings
 (when (eq system-type 'darwin) ;; mac specific settings
@@ -62,5 +50,10 @@
   (global-set-key [kp-delete] 'delete-char)
   (define-key global-map [?¥] [?\\])
   ) ;; sets fn-delete to be right-delete
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;end init.el;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;(add-to-list load-path "~/.emacs.d/")
+;(require 'cyberpunk)
 
 

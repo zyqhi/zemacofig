@@ -1,0 +1,180 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/mutsu/.emacs-live.d/packs/stable/power-pack/" . "lib/")
+ ("/Users/mutsu/.emacs-live.d/packs/stable/" . "colour-pack/")
+ ("/Users/mutsu/.emacs-live.d/packs/" . "stable/")
+ ("/Users/mutsu/.emacs-live.d/" . "packs/")
+ ("/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/" . "lib/")
+ ("/Users/mutsu/project/zemacofig/snippets/" . "markdown-mode/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/ch3/channels/nemesis/netmod/" . "tcp/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/ch3/channels/nemesis/" . "netmod/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/ch3/channels/" . "nemesis/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/ch3/" . "channels/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/" . "ch3/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/" . "mpid/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/" . "src/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/" . "mpich2-1.5rc3/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/" . "src/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/project/" . "mpich2/")
+ ("/ssh:sequoia@172.16.41.129:/home/sequoia/" . "project/")
+ ("/ssh:sequoia@172.16.41.129:/home/" . "sequoia/")
+ ("/ssh:sequoia@172.16.41.129:/" . "home/")
+ ("/Users/mutsu/.emacs.d/vendor/yasnippet/snippets/" . "latex-mode/")
+ ("/Users/mutsu/.emacs.d/vendor/yasnippet/" . "snippets/")
+ ("/Users/mutsu/.emacs.d/vendor/" . "pretty-mode/")
+ ("/Users/mutsu/project/zyqhi.github.io/" . "_posts/")
+ ("/Users/mutsu/project/zemacofig/vendor/" . "sr-speedbar/")
+ ("/Users/mutsu/project/zemacofig/" . "snippets/")
+ ("/Users/mutsu/.emacs.d/" . "config/")
+ ("/Users/mutsu/project/c/" . "tcp/")
+ ("/Users/mutsu/project/" . "zemacofig/")
+ ("/Users/mutsu/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/mutsu/.emacs.d/config/"
+ "/Users/mutsu/.emacs.d/vendor/mic-paren/"
+ "/Users/mutsu/project/zemacofig/"
+ "/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/lib/"
+ "/Users/mutsu/"
+ "/Users/mutsu/.emacs.d/"
+ "/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/config/"
+ "/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/"
+ "/Users/mutsu/.emacs.d/vendor/pretty-mode/"
+ "/Users/mutsu/project/zyqhi.github.io/_posts/"
+ "/Users/mutsu/project/zyqhi.github.io/"
+ "/Users/mutsu/project/zemacofig/snippets/markdown-mode/"
+ "/ssh:sequoia@172.16.41.129:/home/sequoia/project/mpich2/src/mpich2-1.5rc3/src/mpid/ch3/channels/nemesis/netmod/tcp/"
+ "/ssh:sequoia@172.16.41.129:/home/sequoia/project/"
+ "/172.16.41.129:"
+ "/Users/mutsu/.emacs.d/snippets/markdown-mode/"
+ "/Users/mutsu/project/test/tex/"
+ "/Users/mutsu/project/zemacofig/config/"
+ "/Users/mutsu/project/zemacofig/vendor/sr-speedbar/"
+ "/Users/mutsu/project/c/macro/"
+ "/Users/mutsu/project/zemacofig/test/"
+ "/Users/mutsu/project/c/tcp/"
+ "/Users/mutsu/project/zemacofig/themes/emacs-color-themes/themes/"
+ "/Users/mutsu/project/doc/"
+ "/Users/mutsu/project/zemacofig/doc/"
+ "/Users/mutsu/project/test/"
+ "/Users/mutsu/project/zemacofig/vendor/pretty-mode/"
+ "/Users/mutsu/project/zemacofig/test/starter-kit/"
+ "/Users/mutsu/project/test/mdown/"
+ "/Users/mutsu/project/c/hello/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init-ui.el"
+ "mic-paren.el"
+ "cyberpunk.el"
+ "gandalf.el"
+ "init.el"
+ "colour-theme-conf.el"
+ "info.el"
+ "pretty-mode.el"
+ "basic-config.el"
+ "2015-04-01-mpich-mpi-send-implementation.markdown"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/mutsu/.emacs.d/config/" (21791 53475 0 0) "xcscope-config.el" "tabbar-config.el" "skills.el" "init-ui.el" "graphviz-dot-config.el" "copy-enhanced.el" "cc-mode-config.el" "basic-config.el" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/" (21791 53477 0 0) "vendor/" "tramp" "thumbs/" "themes/" "test.el" "test/" "snippets/" "recentf" "README.md" "LICENSE" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "doc/" "cyberpunk.el" "config/" "auto-save-list/" "ac-comphist.dat" ".session" ".mc-lists.el" ".gitignore" ".git/" ".DS_Store" "#cyberpunk.el#" "../" "./")
+
+ ("/Users/mutsu/" (21791 53332 0 0) "百度云同步盘/" "Public/" "project/" "Pictures/" "perkymbf/" "Music/" "Movies/" "Library/" "emacs-live-old-config/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Mutsu’s MacBook Pro-5.0.5" ".vimrc" ".viminfo" ".vim/" ".Trash/" ".swp" ".subversion/" ".ssh/" ".smex-items" ".oh-my-zsh/" ".live-packs/" ".lesshst" ".LESS_TERMCAP" ".gitconfig" ".gemrc" ".gem/" ".emacs.d/" ".emacs-live.el" ".emacs-live.d/" ".DS_Store" ".CFUserTextEncoding" ".bash_history" ".489454.padl" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/" (21790 39497 0 0) "yasnippet/" "yascroll-el/" "tabbar/" "sr-speedbar/" "smex/" "session/" "rainbow-mode/" "rainbow-delimiters/" "pretty-mode/" "pos-tip/" "popup-kill-ring/" "popup/" "paredit/" "multiple-cursors/" "mic-paren/" "markdown-mode/" "magit/" "includeme/" "ido-ubiquitous/" "idle-highlight-mode/" "hide-region/" "hide-lines/" "graphviz-dot-mode/" "git-modes/" "gccsense/" "fuzzy/" "flx/" "find-file-in-project/" "emacs-powerline/" "disaster/" "dictionary/" "cscope/" "auto-complete/" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/flx/" (21790 39497 0 0) "fuzzy.el" "flx-ido.el" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/mic-paren/" (21790 35018 0 0) "mic-paren.el" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/" (21790 32270 0 0) "vendor/" "tramp" "thumbs/" "themes/" "test/" "snippets/" "recentf" "README.md" "LICENSE" "init.el" "ido.last" "eshell/" "elpa/" "doc/" "cyberpunk.el" "config/" "auto-save-list/" "ac-comphist.dat" ".session" ".mc-lists.el" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/" (21790 28347 0 0) "lib/" "init.el" "info.el" "config/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/power-pack/config/" (21790 26467 0 0) "yasnippet-conf.el" "wc-mode-conf.el" "volatile-highlights-conf.el" "undo-tree-conf.el" "scratch-conf.el" "refheap-conf.el" "quick-jump-conf.el" "multiple-cursors-conf.el" "highlight-tail-conf.el" "git-gutter-conf.el" "gist-conf.el" "floobits-conf.el" "expand-region-conf.el" "browse-kill-ring-conf.el" "ace-jump-mode-conf.el" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/power-pack/lib/" (21790 26692 0 0) "yasnippet/" "wc-mode/" "volatile-highlights/" "undo-tree/" "scratch/" "refheap/" "quick-jump.el" "pcache/" "mwe-log-commands.el" "multiple-cursors/" "logito/" "lively.el" "iy-go-to-char.el" "highlight-tail.el" "gist/" "gh/" "floobits/" "expand-region/" "emacs-git-gutter/" "browse-kill-ring/" "ace-jump-mode/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/power-pack/" (21790 16675 0 0) "lib/" "init.el" "info.el" "config/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/" (21790 16675 0 0) "power-pack/" "org-pack/" "lang-pack/" "git-pack/" "foundation-pack/" "colour-pack/" "clojure-pack/" "bindings-pack/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/" (21790 16675 0 0) "update-live-packs" "template/" "stable/" "dev/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/" (21790 22713 0 0) "tmp/" "recentf" "README.md" "packs/" "manifest.el" "LICENSE.txt" "lib/" "installer/" "init.el" "ido.last" "etc/" "CHANGELOG.md" "ac-comphist.dat" ".session" ".gitmodules" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/lib/" (21790 22821 0 0) "live-fontify-hex.el" "gandalf.el" "cyberpunk.el" "color-theme/" "../" "./")
+
+ ("/Users/mutsu/.emacs-live.d/packs/stable/colour-pack/config/" (21790 24925 0 0) "live-fontify-hex-conf.el" "colour-theme-conf.el" "../" "./")
+
+ ("/Users/mutsu/project/zyqhi.github.io/_posts/" (21788 1426 0 0) "2015-04-01-mpich-mpi-send-implementation.markdown" "2015-03-24-test.markdown" "2015-03-23-welcome-to-jekyll.markdown" "2015-03-23-technical_docsty.markdown" "2015-03-23-c-macro-notes.markdown" "2014-01-02-introducing-lanyon.md" "2014-01-01-example-content.md" "2013-12-31-whats-jekyll.md" "../" "./")
+
+ ("/Users/mutsu/project/zyqhi.github.io/" (21789 10609 0 0) "tmp" "README.md" "Rakefile" "public/" "out" "LICENSE.md" "index.html" "atom.xml" "about.md" "_site/" "_posts/" "_layouts/" "_includes/" "_config.yml" "404.html" ".sass-cache/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/snippets/markdown-mode/" (21788 1099 0 0) "note" "insc" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/snippets/" (21780 61783 0 0) "markdown-mode/" "latex-mode/" "../" "./")
+
+ ("/Users/mutsu/project/" (21786 33523 0 0) "zyqhi.github.io/" "zemacofig/" "vimrc/" "test/" "pjeuler/" "elegantsh/" "doc/" "colorman/" "c/" "backup/" "apple/" ".DS_Store" "../" "./")
+
+ ("/Users/" (21761 1043 0 0) "Shared/" "mutsu/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/snippets/markdown-mode/" (21780 61818 0 0) "insc" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/yasnippet/snippets/latex-mode/" (21778 52893 0 0) "usepackage" "textbf" "subsec" "subfigure" "subf" "section" "question" "python" "note" "newglossaryentry" "newcommand" "myframe" "movie" "listing" "label" "itemize" "item" "includegraphics" "if" "glspl" "gls" "frame" "figure" "emph" "columns" "code" "cite" "caption" "capgls" "block" "alg" "alertblock" "acronym" ".yas-parents" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/yasnippet/snippets/" (21765 31841 0 0) "yaml-mode/" "udev-mode/" "typerex-mode" "tuareg-mode/" "text-mode/" "sql-mode/" "snippet-mode/" "sh-mode/" "scala-mode/" "ruby-mode/" "rst-mode/" "rename_add_contr.py" "README.md" "python-mode/" "puppet-mode/" "org-mode/" "octave-mode/" "nxml-mode/" "nsis-mode/" "nesc-mode/" "ned-mode/" "markdown-mode/" "makefile-mode/" "makefile-gmake-mode/" "makefile-bsdmake-mode/" "makefile-automake-mode/" "magit-log-edit-mode/" "m4-mode/" "lua-mode/" "lisp-interaction-mode/" "ledger-mode/" "latex-mode/" "js2-mode/" "js-mode/" "java-mode/" "html-mode/" "haskell-mode/" "groovy-mode/" "go-mode/" "f90-mode/" "erlang-mode/" "erc-mode/" "ensime-mode/" "emacs-lisp-mode/" "css-mode/" "csharp-mode/" "cpp-omnet-mode/" "CONTRIBUTORS.txt" "conf-unix-mode/" "cmake-mode/" "cc-mode/" "c-mode/" "c++-mode/" "autoconf-mode/" "applescript-mode/" "antlr-mode/" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/yasnippet/" (21765 31841 0 0) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "yasmate/" "snippets/" "README.mdown" "Rakefile" "doc/" ".travis.yml" ".gitmodules" ".gitignore" "../" "./")
+
+ ("/Users/mutsu/project/test/" (21778 52741 0 0) "tex/" "sh/" "replacing-display.el" "mdown/" "jekyll/" "git/" "elisp.el" "../" "./")
+
+ ("/Users/mutsu/project/test/tex/" (21778 52955 0 0) "test.tex" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/config/" (21777 18065 0 0) "xcscope-config.el" "tabbar-config.el" "skills.el" "graphviz-dot-config.el" "copy-enhanced.el" "cc-mode-config.el" "basic-config.el" ".#init-ui.el" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/vendor/sr-speedbar/" (21777 14681 0 0) "sr-speedbar.el~" "sr-speedbar.el" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/vendor/" (21771 61477 0 0) "yasnippet/" "yascroll-el/" "tabbar/" "sr-speedbar/" "smex/" "session/" "pretty-mode/" "pos-tip/" "popup-kill-ring/" "popup/" "paredit/" "markdown-mode/" "magit/" "includeme/" "ido-ubiquitous/" "idle-highlight-mode/" "hide-region/" "hide-lines/" "graphviz-dot-mode/" "gccsense/" "fuzzy/" "find-file-in-project/" "emacs-powerline/" "disaster/" "dictionary/" "cscope/" "auto-complete/" "../" "./")
+
+ ("/Users/mutsu/project/c/macro/" (21776 64190 0 0) "macro.c" "macro" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/test/" (21772 11431 0 0) "zjl-hl.el" "starter-kit/" "highlight.el" "../" "./")
+
+ ("/Users/mutsu/project/c/tcp/" (21772 7912 0 0) "server.c" "server" "Makefile" "client.c" "client" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/themes/" (21412 15804 0 0) "zenburn/" "solarized/" "emacs-color-themes/" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/themes/emacs-color-themes/" (21771 53606 0 0) "themes/" "README.md" "previews/" "install.sh" "emacs-color-themes.el" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/themes/emacs-color-themes/themes/" (21771 53910 0 0) "wilson-theme.el" "sublime-themes.el" "spolsky-theme.el" "ritchie-theme.el" "odersky-theme.el" "mccarthy-theme.el" "junio-theme.el" "hickey-theme.el" "granger-theme.el" "graham-theme.el" "fogus-theme.el" "dorsey-theme.el" "brin-theme.el" "../" "./")
+
+ ("/Users/mutsu/project/doc/" (21771 51817 0 0) "test.html" "technical_docsty.md" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/doc/" (21771 44432 0 0) "elisp_func_note.md" "elisp_code_note.md" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/vendor/pretty-mode/" (21768 4333 0 0) "pretty-mode.el" "../" "./")
+
+ ("/Users/mutsu/.emacs.d/vendor/pretty-mode/" (21768 4333 0 0) "pretty-mode.el" "../" "./")
+
+ ("/Users/mutsu/project/apple/" (21763 53669 0 0) "swift/" "oc/" ".DS_Store" "../" "./")
+
+ ("/Users/mutsu/project/zemacofig/test/starter-kit/" (21767 49698 0 0) "starter-kit.el" "starter-kit-misc.el" "starter-kit-defuns.el" "elisp_code_note.md" "../" "./")
+
+ ("/Users/mutsu/project/test/mdown/" (21766 56970 0 0) "index.text" "../" "./")
+
+ ("/Users/mutsu/project/c/hello/" (21762 56814 0 0) "hello.c" "../" "./")
+
+ ("/Users/mutsu/project/c/" (21762 56814 0 0) "tcp/" "hello/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

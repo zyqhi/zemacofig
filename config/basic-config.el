@@ -1,25 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;; 基本配置 ;;;;;;;;;;;;;;;;;;;;
 
 (require 'init-ui)
-;;------------
 
-;; theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/zenburn")
-					;(load-theme 'zenburn t)
-					;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/solarized")
-					;(require 'solarized)
-					;(require 'solarized-themes)
-					;(load-theme 'solarized-dark)
-
-					;(load-theme 'dichromacy)
-					;(load-theme 'adwaita)
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-themes/themes")
-					;(load-theme 'graham t)
-(load-theme 'granger t)
-					;(load-theme 'spolsky t)
-					;(load-theme 'hickey t)
-;; -------------
-
+;; 不备份文件，不推荐
+(setq make-backup-files nil)
 
 (defun my-buffer-face-mode-varible ()
   (interactive)
@@ -31,6 +15,7 @@
 
 
 ;; 最大化窗口
+;; 仅在linux下使用X桌面才有用
 (defun toggle-full-screen (&optional f)
   "Maxsize the frame when launch emacs."
   (interactive)
@@ -64,27 +49,7 @@
 					;(set-fontset-font "fontset-default" 'han '("WenQuanYi Micro Hei"))
 ;; 窗口显示设置，0表示隐藏，t表示显示
 
-(progn
-  ;; Turn off mouse interface early in startup to avoid momentary display
-  (dolist (mode '(
-					;menu-bar-mode 
-		  tool-bar-mode 
-		  scroll-bar-mode
-		  auto-fill-mode ;; 关闭自动换行
-		  ))
-    (when (fboundp mode) (funcall mode -1))))
-
-;; TAB的宽度
-					;(setq default-tab-width 8)
-					;TAB的宽度在这里设置没有用，因为emacs的tab默认绑定不是<tab>字符，而是一个
-					;函数，而插入<tab>字符的命令是C-q <tab>，一般不鼓励这样做，具体的在具体的
-					;编程环境中进行设置
-
-;; 显示行号
-(require 'linum)
-(global-linum-mode t)
-(setq linum-format "  %d ")
-
+ 
 ;; 
 ;; (require 'tabbar-config)
 
@@ -93,7 +58,7 @@
 (require 'yasnippet)
 (setq yas-snippet-dirs
       '(
-		"~/.emacs/snippets"		;; my personal snippets
+		"~/.emacs.d/snippets"		;; my personal snippets
 	"~/.emacs.d/vendor/yasnippet/snippets"         ;; the default collection
 	))
 (yas-global-mode 1)
@@ -193,9 +158,6 @@
 (global-set-key (kbd "C-c l") 'hide-lines)
 (global-set-key (kbd "C-c L") 'show-all-invisible)
 
-;; sr-speedbar
-(add-to-list 'load-path "~/.emacs.d/vendor/sr-speedbar")
-(require 'sr-speedbar)
 
 ;; smex
 (add-to-list 'load-path "~/.emacs.d/vendor/smex")
@@ -276,9 +238,13 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;;
-(add-to-list 'load-path "~/.emacs.d/vendor/pretty-mode")
-(require 'pretty-mode)
-(global-pretty-mode 1)
+
+
+(add-to-list 'load-path "~/.emacs.d/vendor/multiple-cursors")
+(require 'multiple-cursors)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 
 (provide 'basic-config)

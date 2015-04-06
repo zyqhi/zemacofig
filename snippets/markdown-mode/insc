@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: Insert code
+# key: insc
+# --
+{% highlight $1 %}
+$0
+{% endhighlight %}
+

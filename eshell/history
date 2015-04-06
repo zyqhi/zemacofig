@@ -1,128 +1,128 @@
-ls
-ls Applications/
-ls /
-ls /Applications/
-ls
-cd ..
-ls
-cd ..
-ls
-mkdir doc
-ls
-zsh
-ls
-multimarkdown technical_docsty.md 
-ls
-multimarkdown technical_docsty.md > test.html
-ls
-open test.html
-vi test.html
-ls
-open test.html
-ls
-htmltree test.html
-ls
-cd ..
-ls
-cd zemacofig/
-ls
-cd doc/
-ls
-cd ..
-ls
-ls
-cd project/
-ls
-cd zemacofig/
-ls
-cd test/
-cd ../themes/
-ls
-cd emacs-color-themes/
-ls
-cd themes/
-ls
-ls
-mv basic-config.el basic-config.el.bk1
-ls
-mv basic-config.el.bk basic-config.el
-ls
-ls
-rm #client.c#
-rm \#client.c\#
-ls
-cd ..
-cd ..
-ls
-cd zemacofig/
-ls
-ls
-cd themes/
-ls
-cd emacs-color-themes/
-ls
-cd previews/
-ls
-open brin.png 
-open fogus.png 
-open *.png
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-ls
-rm #basic-config.el#
-rm \#basic-config.el\#
-ls
-ls
-ls
-ls
-pwd
-cd project/
-ls
-cd c
-ls
-mkdir macro
-cd macro/
-ls
-ls
-touch macro.c
-ls
-clang macro.c -o macro
-clang macro.c -o macro
-clang macro.c -o macro
-ls
-./macro 
-clang macro.c -o macro
-./macro 
-clang macro.c -o macro
-./macro 
-ls
-ls
-cat macro.c
-ls
-ls
-jekyll s
-ls
-rm -fr _site/
-cd ..
-ls
-cd ..
-ls
-cd zyqhi.github.io/
-ls
-jekyll s
-jekyll s
-man ascii
-ls
-echo "" > sr-speedbar.el 
-ls
-cd project/
-ls
 cd test/
 ls
 mkdir tex
 cd tex/
 touch test.tex
+ls
+cd .emacs.d/snippets/
+ls
+mkdir markdown-mode
+cd markdown-mode/
+touch insc
+cat ../latex-mode/myfrmae 
+cat ../latex-mode/myfrmae >> insc 
+ssh sequoia@172.16.41.129
+cd ~
+ls
+cd project/
+ls
+cd zyqhi.github.io/
+ls
+vi Rakefile
+ls
+rake post
+rake
+cd project/
+ls
+cd zyqhi.github.io/
+ls
+rake post
+rake post --trace
+ls
+ls
+rake post TITLE="MPICH-MPI_Send实现分析"
+ls _posts/
+rm _posts/2015-04-01-mpich-mpi_send-.markdown 
+rake post TITLE="MPICH-MPI_Send实现分析"
+ls
+rake post TITLE="MPICH-MPI-Send-implementation"
+　ls
+ls
+cd ..
+ls
+jekyll s
+jekyll s
+open -a iTerm
+jekyll s
+Server address: lshttp://127.0.0.1:4000//
+ls
+ls
+ls
+cd project/
+ls
+cd zyqhi.github.io/
+ls
+touch tmp
+cd .emacs.d/
+ls
+cd test/
+ls
+cd ..
+ls
+cd config/
+ls
+cd .emacs-live.d/
+ls
+cd packs/
+ls
+ls
+cd stable/
+ls
+cd ..
+ls
+cd template/
+ls
+cd ..
+ls
+cd stable/
+ls
+cd colour-pack/
+ls
+ls
+cd config/
+ls
+cd ..
+ls
+cd lib/
+ls
+ls
+ls
+cp cyberpunk.el ~
+ls
+ls
+cd perkymbf/
+ls
+emacs
+cd .emacs.d/
+ls
+cd vendor/
+ls
+mkdir mic-paren
+cd multiple-cursors/
+cd ..
+cd mic-paren/
+ls
+touch mic-paren.el
+pwd
+/Users/mutsu/cd .emacs.d/vendor/mic-paren
+cd ..
+cd ..
+ls
+ls
+mv ~/flx* .emacs.d/vendor/
+cd .emacs.d/vendor/
+pwd
+ls
+mkdir flx
+mv flx.el fuzzy/
+mv fuzzy/fuzzy.el flx/
+ls
+mv flx-ido.el flx/
+cd flx/
+pwd
+cd ..
+cd vendor/
+ls
+ls
+cd window-margin/
+ls
