@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: comment header
+# key: cmh
+# --
+/*
+ * Author        : Yuqang Zhou
+ * Date          : `(progn (insert (shell-command-to-string "date")) (kill-whole-line))`
+ * Purpose       :
+ * Discription   :
+ */

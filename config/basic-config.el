@@ -246,5 +246,9 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+(add-to-list 'load-path "~/.emacs.d/vendor/magic-latex-buffer")
+(require 'magic-latex-buffer)
+(add-hook 'latex-mode-hook 'magic-latex-buffer)
+
 
 (provide 'basic-config)

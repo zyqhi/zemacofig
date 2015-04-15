@@ -1,39 +1,3 @@
-cd test/
-ls
-mkdir tex
-cd tex/
-touch test.tex
-ls
-cd .emacs.d/snippets/
-ls
-mkdir markdown-mode
-cd markdown-mode/
-touch insc
-cat ../latex-mode/myfrmae 
-cat ../latex-mode/myfrmae >> insc 
-ssh sequoia@172.16.41.129
-cd ~
-ls
-cd project/
-ls
-cd zyqhi.github.io/
-ls
-vi Rakefile
-ls
-rake post
-rake
-cd project/
-ls
-cd zyqhi.github.io/
-ls
-rake post
-rake post --trace
-ls
-ls
-rake post TITLE="MPICH-MPI_Send实现分析"
-ls _posts/
-rm _posts/2015-04-01-mpich-mpi_send-.markdown 
-rake post TITLE="MPICH-MPI_Send实现分析"
 ls
 rake post TITLE="MPICH-MPI-Send-implementation"
 　ls
@@ -125,4 +89,40 @@ cd vendor/
 ls
 ls
 cd window-margin/
+ls
+source ~/project/osx-zsh/mmd2jky.sh 
+emacs ~/project/osx-zsh/mmd2jky.sh 
+ls
+cp 2015-04-01-mpich-mpi-send-implementation.markdown bk
+ls
+cat bk
+zsh
+ls
+ls
+ls
+cd ..
+ls
+jekyll s
+ls
+rm bk out 
+ls
+jekyll s
+ls
+./test.sh hello world
+./test.sh hello world "hello world"
+cd .emacs.d/
+ls
+ls
+ls
+cd snippets/
+ls
+cp ../vendor/yasnippet/snippets/c-mode/union  .
+ls
+ls
+mkdir c-mode
+mv union c-mode/
+ls
+cd c-mode/
+ls
+mv union cmh
 ls

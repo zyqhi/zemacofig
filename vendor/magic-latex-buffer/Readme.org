@@ -1,0 +1,36 @@
+* magic-latex-buffer.el
+
+magical syntax highlighting for LaTeX-mode buffers.
+
+LaTeX-mode のシンタックスハイライトを激しく
+
+** Screencast
+
+[[imgs/screencast.gif]]
+
+** Other examples
+
+- make it readable a mess of commands
+
+  [[imgs/readability.gif]]
+
+- handle nested blocks correctly
+
+  [[imgs/nested_blocks.gif]]
+
+- fix inline-math highlighting for documents with multi-byte characters
+
+- inline image preview powered by =iimage-mode=
+
+** Installation
+
+Put magic-latex-buffer.el into a "load-path"ed directory, and load it in your
+init file.
+
+: (require 'magic-latex-buffer)
+
+Then you can enable highlighting with =M-x magic-latex-buffer= in a
+latex-mode-buffer. If you want to enable highlighting automatically,
+add the function to the mode hook.
+
+: (add-hook 'latex-mode-hook 'magic-latex-buffer)

@@ -50,7 +50,7 @@
 ;; 显示行号
 (require 'linum)
 (global-linum-mode t)
-(setq linum-format "  %d ")
+;; (setq linum-format "  %d ")
 
 
 (add-to-list 'load-path "~/.emacs.d/vendor/rainbow-delimiters")
