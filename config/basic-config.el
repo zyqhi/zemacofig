@@ -251,4 +251,24 @@
 (add-hook 'latex-mode-hook 'magic-latex-buffer)
 
 
+(setq default-terminal-coding-system 'utf-8) 
+
+(add-to-list 'load-path "~/.emacs.d/vendor/multi-term")
+(require 'multi-term)
+(setq multi-term-program "/bin/zsh")
+;; Use Emacs terminfo, not system terminfo
+;; (setq system-uses-terminfo nil)
+
+(add-hook 'term-mode-hook
+	  (lambda ()
+	    (yas-minor-mode -1)
+	    (define-key term-raw-map (kbd "C-y") 'term-paste)
+	    (setq term-buffer-maximum-size 0)
+	    (add-to-list 'term-bind-key-alist '("M-[" . multi-term-prev))
+	    (add-to-list 'term-bind-key-alist '("M-]" . multi-term-next))))
+
+;; add follow code in ~/.zshrc
+;; export LC_ALL="en_US.UTF-8"
+;; export LANG="en_US.UTF-8"
+	  
 (provide 'basic-config)

@@ -1,37 +1,3 @@
-ls
-rake post TITLE="MPICH-MPI-Send-implementation"
-　ls
-ls
-cd ..
-ls
-jekyll s
-jekyll s
-open -a iTerm
-jekyll s
-Server address: lshttp://127.0.0.1:4000//
-ls
-ls
-ls
-cd project/
-ls
-cd zyqhi.github.io/
-ls
-touch tmp
-cd .emacs.d/
-ls
-cd test/
-ls
-cd ..
-ls
-cd config/
-ls
-cd .emacs-live.d/
-ls
-cd packs/
-ls
-ls
-cd stable/
-ls
 cd ..
 ls
 cd template/
@@ -126,3 +92,37 @@ cd c-mode/
 ls
 mv union cmh
 ls
+ls
+cls
+cd project/
+ls
+cd poj/
+ls
+mkdir 1010
+cd 1010/
+ls
+touch 1010.c
+ls
+ls
+tic -o ~/.terminfo ./eterm-color.ti 
+ls .terminfo/
+ls
+gcc test.c 
+ls
+./a.out 
+ls
+rm a.out 
+gcc test.c 
+ls
+./a.out 
+ls
+cd ..
+ls
+cd 1010/
+ls
+gcc 1010.c 
+gcc 1010.c 
+ls
+./a.out 
+./a.out 
+open iterm2
