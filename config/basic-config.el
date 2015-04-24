@@ -210,6 +210,8 @@
 (require 'magit)
 
 ;; copy
+;; (require 'copy-enhanced)
+(add-to-list 'load-path "~/.emacs.d/vendor/copy-enhanced")
 (require 'copy-enhanced)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;cscope;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -256,8 +258,8 @@
 (add-to-list 'load-path "~/.emacs.d/vendor/multi-term")
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
-;; Use Emacs terminfo, not system terminfo
-;; (setq system-uses-terminfo nil)
+
+(global-set-key (kbd "<f12>") 'multi-term)
 
 (add-hook 'term-mode-hook
 	  (lambda ()

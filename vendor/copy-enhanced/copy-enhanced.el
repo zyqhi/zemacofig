@@ -1,23 +1,3 @@
-;; theme
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/zenburn")
-					;(load-theme 'zenburn t)
-					;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/solarized")
-					;(require 'solarized)
-					;(require 'solarized-themes)
-					;(load-theme 'solarized-dark)
-
-					;(load-theme 'dichromacy)
-					;(load-theme 'adwaita)
-; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-themes/themes")
-;(load-theme 'graham t)
-					;(load-theme 'spolsky t)
-					;(load-theme 'hickey t)
-;; -------------
-
-
-;; This buffer is for notes you don't want to save, and for Lisp evaluation.
-;; If you want to create a file, visit that file with C-x C-f,
-;; then enter the text in that file's own buffer.
 
 (defun get-point (symbol &optional arg)
   "get the point"
@@ -59,6 +39,7 @@
   "Save current line into Kill-Ring without mark the line "
   (interactive "P")
   (copy-thing 'beginning-of-line 'end-of-line arg)
+  (message "line copied")
 ;;  (paste-to-mark arg)
   )
 (defun copy-paragraph (&optional arg)
@@ -115,6 +96,20 @@
 (global-set-key (kbd "C-c p") 'copy-paragraph)
 (global-set-key (kbd "C-c c") 'thing-copy-string-to-mark)
 
+
+;;;###autoload
+(define-minor-mode copy-enhanced-mode
+  "Emacs copy enhanced."
+  :lighter " copy enhanced"
+  :keymap (let ((map (make-sparse-keymap)))
+            (define-key map (kbd "C-c w") 'copy-word)
+	    (define-key map (kbd "C-c l") 'copy-line)
+	    (define-key map (kbd "C-c w") 'copy-paragraph)
+	    (define-key map (kbd "C-c w") 'thing-copy-string-to-mark)
+            map)
+  )
+
+;;;###autoload
+(add-hook 'text-mode-hook 'copy-enhanced-mode)
+
 (provide 'copy-enhanced)
-
-

@@ -1,13 +1,3 @@
-cd ..
-ls
-cd template/
-ls
-cd ..
-ls
-cd stable/
-ls
-cd colour-pack/
-ls
 ls
 cd config/
 ls
@@ -126,3 +116,13 @@ ls
 ./a.out 
 ./a.out 
 open iterm2
+ls
+cd ..
+ls
+cd ..
+ls
+cd project/
+ls
+cd zemacofig/config/b
+cd zemacofig/config/
+ls

@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	c-electric-pound
 	hide-region-backward-char
 	loop-alpha
 	paredit-open-round

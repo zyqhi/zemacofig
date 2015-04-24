@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: comment header
+# key: cmh
+# --
+#!env ruby
+# Author        : Yongqiang Zhou
+# Date          : `(progn (insert (shell-command-to-string "date")) (kill-whole-line))`
+# Purpose       : ${1:Learn Ruby}
+# Discription   : $2
+#
+
+$0

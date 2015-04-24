@@ -66,6 +66,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/vendor/sr-speedbar")
 (require 'sr-speedbar)
+(global-set-key (kbd "<f5>") 'sr-speedbar-toggle)
 
 ;; (set-frame-parameter (selected-frame) 'alpha '(90 90))
 ;; (add-to-list 'default-frame-alist '(alpha 85 85))
