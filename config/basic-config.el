@@ -272,5 +272,12 @@
 ;; add follow code in ~/.zshrc
 ;; export LC_ALL="en_US.UTF-8"
 ;; export LANG="en_US.UTF-8"
+
+(add-to-list 'load-path "~/.emacs.d/vendor/haskell-mode/")
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list "~/.emacs.d/vendor/haskell-mode/")
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
+;;(setq haskell-indentation-where-pre-offset 4)
+;;(setq haskell-indentation-left-offset 4)
 	  
 (provide 'basic-config)

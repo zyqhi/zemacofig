@@ -1,7 +1,3 @@
-/Users/mutsu/.emacs.d/test
-/Users/mutsu/.emacs.d/config
-/Users/mutsu/.emacs-live.d
-/Users/mutsu/.emacs-live.d/packs/template
 /Users/mutsu/.emacs-live.d/packs
 /Users/mutsu/.emacs-live.d/packs/stable
 /Users/mutsu/.emacs-live.d/packs/stable/colour-pack/config
@@ -10,7 +6,6 @@
 /Users/mutsu/perkymbf
 /Users/mutsu/.emacs.d/vendor/multiple-cursors
 /Users/mutsu/.emacs.d/vendor/mic-paren
-/Users/mutsu/.emacs.d/vendor
 /Users/mutsu/.emacs.d/vendor/flx
 /Users/mutsu/project/zemacofig/config
 /Users/mutsu/project/zemacofig
@@ -19,7 +14,6 @@
 /Users/mutsu/project/zyqhi.github.io/_posts
 /Users/mutsu/project/zyqhi.github.io
 /Users/mutsu/project/osx-zsh
-/Users/mutsu/.emacs.d
 /Users/mutsu/.emacs.d/snippets
 /Users/mutsu/.emacs.d/snippets/c-mode
 ~
@@ -31,3 +25,8 @@
 /Users/mutsu
 /Users/mutsu/project
 /Users/mutsu/project/zemacofig/config
+/Users/mutsu/.emacs.d/config
+/Users/mutsu/.emacs.d
+/Users/mutsu/.emacs.d/vendor
+/Users/mutsu/.emacs.d/vendor/haskell-mode
+/Users/mutsu/project/prolan/haskell

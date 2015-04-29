@@ -1,15 +1,3 @@
-ls
-cd config/
-ls
-cd ..
-ls
-cd lib/
-ls
-ls
-ls
-cp cyberpunk.el ~
-ls
-ls
 cd perkymbf/
 ls
 emacs
@@ -126,3 +114,15 @@ ls
 cd zemacofig/config/b
 cd zemacofig/config/
 ls
+ls
+cd ..
+ls
+cd vendor/
+ls
+cd haskell-mode/
+ls
+ls
+touch fib.hs
+ls
+ghci
+ghci
